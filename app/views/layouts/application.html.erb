@@ -3,11 +3,16 @@
 <head>
   <title>PagamoCompoents</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<%= react_component 'MainNav', {
+    logo: image_url('courses_lobby_logo.png'),
+    roleImg: [image_url('role1'), image_url('role2')],
+    icons: [image_url('list.svg'), image_url('cart.svg')]
+} %>
 <%= yield %>
 
 </body>

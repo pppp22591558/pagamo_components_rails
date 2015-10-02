@@ -1,0 +1,134 @@
+.checkout-page{
+  .checkout-process{
+    @include responsiveFullWidth;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid gainsboro;
+    .process-bar{
+      width: 720px;
+      height: 10px;
+      background-image: linear-gradient(right, #E78840 0%, #F7665B 100%);
+      background-image: -webkit-linear-gradient(right, #E78840 0%, #F7665B 100%);
+      background-image: -moz-linear-gradient(right, #E78840 0%, #F7665B 100%);
+      background-image: -ms-linear-gradient(right, #E78840 0%, #F7665B 100%);
+      margin: 0 auto;
+      position: relative;
+      z-index: -1;
+      top: 25px;
+      &:after{
+        content: '';
+        position: absolute;
+        width: 50%;
+        right: 0;
+        height: 10px;
+        background-color: gainsboro;
+      }
+    }
+    .process{
+      display: inline-block;
+      text-align: center;
+      width: 370px;
+      .circle{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        margin: 0 auto;
+        &:before{
+          content: '';
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          margin-left: -30px;
+          margin-top: -10px;
+          z-index: -1;
+          border-radius: 100%;
+        }
+        &.circle-1{
+          background-color: #F87266;
+          &:before{
+            background-color: #F87266;
+            opacity: 0.5;
+            display: none;
+          }
+        }
+        &.circle-2{
+          background-color: #F28359;
+          &:before{
+            background-color: #F28359;
+            opacity: 0.5;
+          }
+        }
+        &.circle-3{
+          background-color: #EA9349;
+          background-color: gainsboro;
+          &:before{
+            background-color: #EA9349;
+            opacity: 0.5;
+            display: none;
+          }
+        }
+      }
+      h4{
+
+      }
+    }
+  }
+  .product-list{
+
+    th{
+      text-align: left;
+      padding: 5px;
+    }
+    td{
+      padding: 5px;
+    }
+    .plans{
+      @include responsiveFullWidth;
+      margin: 0 auto;
+      margin-top: 30px;
+      tr{
+        background: white;
+        cursor: pointer;
+        @include transition;
+        &:hover{
+          background: rgba(255, 188, 77, 0.15);
+        }
+      }
+      .select{
+        width: 100px;
+      }
+      .text-book{
+        width: 300px;
+      }
+      .price{
+        width: 150px;
+      }
+      .plan{
+        width: 200px;
+      }
+      .add-to-classes{
+        width: 300px;
+      }
+      .total{
+        width: 150px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .checkout-page{
+    .checkout-process{
+      .process-bar{
+        width: 520px;
+      }
+      .process{
+        width: 260px;
+      }
+    }
+  }
+}

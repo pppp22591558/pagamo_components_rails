@@ -1,0 +1,143 @@
+.search-bar{
+  border: 2px solid gainsboro;
+  border-radius: 5px;
+  padding: 3px;
+  outline: none;
+  @include transition;
+  &:focus{
+    border: 2px solid $yellow;
+  }
+}
+
+.check-box{
+  position: relative;
+  display: inline-block;
+  input[type="checkbox"]{
+    display: none;
+  }
+  label{
+    cursor: pointer;
+  }
+  input[type="checkbox"] + label span.check{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border: 1px gainsboro;
+    border-style: dotted;
+    border-radius: 5px;
+    margin-right: 7px;
+  }
+  input[type="checkbox"]:checked + label span.check{
+    border-color: $yellow;
+  }
+  input[type="checkbox"] + label span.check .check-icon i{
+    font-size: 22px;
+    opacity: 0;
+    color: $orange;
+    @include transition;
+    @include transform(translateY(4px));
+  }
+  input[type="checkbox"]:checked + label span.check .check-icon i{
+    opacity: 1;
+    color: $yellow;
+    @include transform(translateY(-2px));
+  }
+}
+
+.multi-select-box{
+  border-bottom: 1px dashed gainsboro;
+  width: 250px;
+  padding-bottom: 5px;
+  position: relative;
+  .items-select{
+  }
+  h5{
+    margin: 0;
+    span{
+      color: #A0A0A0;
+    }
+    span.student-num{
+      font-size: 12px;
+      color: gainsboro;
+      float: right;
+    }
+    i{
+      float: right;
+      margin-left: 5px;
+      font-size: 16px;
+    }
+  }
+  ul{
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    width: 250px;
+    border: 1px solid gainsboro;
+    border-top: 1px dashed gainsboro;
+    margin-top: 5px;
+    li{
+      position: relative;
+      padding: 5px;
+      &:hover{
+        background: $light-gray;
+      }
+      span.student-num{
+        float: right;
+        display: inline-block;
+        color: gainsboro;
+        font-size: 12px;
+        vertical-align: middle;
+        line-height: 21px;
+      }
+    }
+    li.btn-li{
+      text-align: center;
+    }
+  }
+}
+
+.select-box{
+  .items-select{
+    border-bottom: 1px dashed gainsboro;
+    width: 150px;
+    padding-bottom: 5px;
+    position: relative;
+    h5{
+      margin: 0;
+    }
+    span{
+      color: #A0A0A0;
+    }
+    i{
+      margin-left: 5px;
+      font-size: 16px;
+      float: right;
+    }
+  }
+  ul{
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    width: 150px;
+    border: 1px solid gainsboro;
+    border-top: 1px dashed gainsboro;
+    margin-top: -1px;
+    li{
+      position: relative;
+      padding: 5px;
+      &:hover{
+        background: $light-gray;
+      }
+    }
+  }
+}
+
+.btn-small{
+  display: inline-block;
+  margin-right: 5px;
+  button{
+    background: none;
+    border: none;
+  }
+}

@@ -1,0 +1,150 @@
+$red: #F7665B;
+$orange: #E78840;
+$yellow: #FFBC4D;
+$light-gray: #F7F7F7;
+
+body{
+  margin: 0;
+  font-family: 'Nunito', "Helvetica Neue";
+  -webkit-font-smoothing: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, p, a, th, td, span{
+  color:#555555;
+}
+
+div, ul, li, a, img, section {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  //border: 1px #24CBFF dashed;
+}
+
+ul{
+  padding-left: 0;
+  margin: 0;
+  li{
+    list-style-type: none;
+    a{
+      text-decoration: none;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@mixin max-width {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@mixin responsiveFullWidth {
+  width: 1220px;
+  @media screen and (max-width:1280px) {
+    width: 900px;
+  }
+
+  @media screen and (max-width:968px) {
+    //mobile layout
+  }
+}
+
+@mixin responsiveLargeWidth {
+  width: 1002px;
+
+  @media screen and (max-width:1280px) {
+    width: 700px;
+  }
+
+  @media screen and (max-width:968px) {
+    //mobile layout
+  }
+}
+
+@mixin responsiveSmallWidth {
+  width: 200px;
+
+  @media screen and (max-width:1280px) {
+    width: 174px;
+  }
+
+  @media screen and (max-width:768px) {
+    //mobile layout
+  }
+}
+
+@mixin floatFix {
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+
+@mixin shadow {
+  -webkit-box-shadow: 0px 0px 10px -3px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 10px -3px rgba(0,0,0,1);
+  box-shadow: 0px 0px 10px -3px rgba(0,0,0,1);
+}
+
+@mixin transition {
+  -webkit-transition: all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+     -moz-transition: all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+       -o-transition: all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+          transition: all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+}
+
+@mixin hex($width:20px, $color:#64C7CC) {
+  position: relative;
+  width: $width;
+  height: ($width/1.7321);
+  background-color: $color;
+  margin: ($width/3.464) 0;
+
+  &:before, &:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: ($width/2) solid transparent;
+    border-right: ($width/2) solid transparent;
+  }
+
+  &:before{
+    bottom: 100%;
+    border-bottom: ($width/3.464) solid $color;
+  }
+
+  &:after{
+    top: 100%;
+    width: 0;
+    border-top: ($width/3.464) solid $color;
+  }
+}
+
+.large-hide{
+  display: block;
+}
+
+@media screen and (max-width:1280px) {
+  .large-hide{
+    display: none !important;
+  }
+}
+
+button:focus{
+  outline:none;
+}
+
+@mixin transform($type) {
+  transform: $type;
+  -webkit-transform: $type;
+  -moz-transform: $type;
+  -ms-transform: $type;
+  -o-transform: $type;
+}

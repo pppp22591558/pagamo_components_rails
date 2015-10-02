@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-
+gem 'greensock-rails', '~> 1.17.0.0'
+gem "font-awesome-rails"
+gem 'normalize-rails'
 gem 'react-rails', '~> 1.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'

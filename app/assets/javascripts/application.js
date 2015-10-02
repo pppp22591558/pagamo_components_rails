@@ -13,6 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require 'greensock/TweenLite'
+//= require 'greensock/TweenMax'
+//= require 'greensock/easing/EasePack'
 //= require react
 //= require react_ujs
 //= require components

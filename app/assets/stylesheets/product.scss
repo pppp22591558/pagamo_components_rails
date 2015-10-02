@@ -1,0 +1,236 @@
+.product-page-wrapper{
+  margin-top: 30px;
+}
+.product-header{
+  @include floatFix;
+  @include responsiveFullWidth;
+  margin: 0 auto;
+  padding-top:20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gainsboro;
+  .course-img{
+    display: inline-block;
+    float: left;
+  }
+  .course-description{
+    padding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+    float: left;
+    height: 100px;
+    width: 700px;
+    overflow: hidden;
+    h2{
+      margin: 0;
+    }
+    p{
+      margin: 0;
+    }
+  }
+  .course-actions{
+    display: inline-block;
+    float: right;
+    ul{
+      @include floatFix;
+      li{
+        display: inline-block;
+        float: left;
+        height: 100px;
+        width: 140px;
+        padding-left: 30px;
+        padding-right: 30px;
+        &:first-child{
+          border-left: 1px solid gainsboro;
+        }
+        img{
+          height: 50px;
+          display: block;
+          margin: 0 auto;
+        }
+        h5{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.product-page-wrapper{
+  th{
+    text-align: left;
+    padding: 5px;
+  }
+  td{
+    padding: 5px;
+  }
+  .plans{
+    @include responsiveFullWidth;
+    margin: 0 auto;
+    margin-top: 30px;
+    tr{
+      background: white;
+      cursor: pointer;
+      @include transition;
+      &:hover{
+        background: rgba(255, 188, 77, 0.15);
+      }
+    }
+    .select{
+      width: 100px;
+    }
+    .text-book{
+      width: 300px;
+    }
+    .price{
+      width: 150px;
+    }
+    .plan{
+      width: 200px;
+    }
+    .add-to-classes{
+      width: 300px;
+    }
+    .total{
+      width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .product-header{
+    .course-description{
+      width: 380px;
+    }
+  }
+}
+
+.product-page-wrapper{
+  .product-recommendation{
+    @include responsiveFullWidth;
+    margin: 0 auto;
+    margin-top: 30px;
+    h3{
+      color: gainsboro;
+      margin: 0px;
+    }
+    ul{
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 10px;
+      height: 120px;
+      overflow: hidden;
+      border-bottom: 1px solid gainsboro;
+      @include floatFix;
+      li{
+        display: inline-block;
+        margin-right: 32.5px;
+        margin-left: 32.5px;
+        margin-top: 30px;
+        float: left;
+        @include transition;
+        &.active{
+          transform: translateY(-30px);
+          -webkit-transform: translateY(-30px);
+          -ms-transform: translateY(-30px);
+          -moz-transform: translateY(-30px);
+          -o-transform: translateY(-30px);
+        }
+        h5{
+          text-align: center;
+          margin: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .product-page-wrapper{
+    .product-recommendation{
+      ul{
+        li{
+          margin-right: 34px;
+          margin-left: 34px;
+          &:nth-child(5), &:nth-child(7){
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.product-page-wrapper{
+  .check-out{
+    @include responsiveFullWidth;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid gainsboro;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    ul{
+      @include floatFix;
+      display: inline-block;
+      li{
+        display: inline-block;
+        float: left;
+        margin-right: 20px;
+        height: 45px;
+        h5{
+          margin: 0;
+          line-height: 45px;
+        }
+        &.checkout-price{
+          span.price{
+            font-size: 24px;
+            padding-right: 10px;
+          }
+          span.total{
+            color: gainsboro;
+          }
+        }
+        &.checkout-actions{
+          .checkout-btn{
+            display: inline-block;
+            margin-left: 5px;
+            margin-right: 5px;
+            i{
+              display: inline-block;
+              margin-right: 5px;
+            }
+            h4{
+              display: inline-block;
+              margin: 0;
+              line-height: 45px;
+            }
+            &.btn-left{
+              border: 2px solid $red;
+              padding-left: 10px;
+              padding-right: 10px;
+              border-radius: 5px;
+              i{
+                color: $red;
+              }
+              h4{
+                color: $red;
+              }
+            }
+            &.btn-right{
+              border: 2px solid $yellow;
+              padding-left: 10px;
+              padding-right: 10px;
+              border-radius: 5px;
+              i{
+                color: $yellow;
+              }
+              h4{
+                color: $yellow;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

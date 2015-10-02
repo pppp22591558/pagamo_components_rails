@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px"
+	 height="63px" viewBox="0 0 64 63" style="enable-background:new 0 0 64 63;" xml:space="preserve">
+<g id="Layer_91">
+	<g>
+		<path style="fill:#00A0C5;" d="M33,4H17c-1.104,0-2,0.895-2,2v11h20V6C35,4.895,34.104,4,33,4z"/>
+		<path style="fill:#F15642;" d="M55,0h-8c-1.104,0-2,0.895-2,2v15h12V2C57,0.895,56.104,0,55,0z"/>
+		<path style="fill:#84BD5A;" d="M45,6H32c-1.104,0-2,0.895-2,2v9h17V8C47,6.895,46.104,6,45,6z"/>
+		<rect x="15" y="15" style="fill:#0094B7;" width="15" height="2"/>
+		<rect x="30" y="15" style="fill:#6FA14E;" width="17" height="2"/>
+		<rect x="47" y="15" style="fill:#D3463C;" width="10" height="2"/>
+		<path style="fill:#E2E5E7;" d="M58,17H9.275L13,45c0,3.299,2.7,6,6,6h36c3.3,0,6-2.701,6-6l3-22.002C64,19.699,61.3,17,58,17z"/>
+		<path style="fill:#CAD1D8;" d="M35,42c0-0.002,0-0.002,0-0.004v-15.99c0-0.002,0-0.004,0-0.006c0-1.104-0.895-2-2-2
+			c-1.104,0-1.998,0.895-2,2l0,0v16l0,0l0,0c0,1.105,0.896,2,2,2C34.105,44,35,43.105,35,42z"/>
+		<path style="fill:#CAD1D8;" d="M51,42c0-0.002,0-0.002,0-0.004v-15.99c0-0.002,0-0.004,0-0.006c0-1.104-0.895-2-2-2
+			c-1.104,0-1.998,0.895-2,2l0,0v16l0,0l0,0c0,1.105,0.896,2,2,2C50.105,44,51,43.105,51,42z"/>
+		<path style="fill:#CAD1D8;" d="M43,42c0-0.002,0-0.002,0-0.004v-15.99c0-0.002,0-0.004,0-0.006c0-1.104-0.895-2-2-2
+			c-1.104,0-1.998,0.895-2,2l0,0v16l0,0l0,0c0,1.105,0.896,2,2,2C42.105,44,43,43.105,43,42z"/>
+		<path style="fill:#CAD1D8;" d="M27,42c0-0.002,0-0.002,0-0.004v-15.99c0-0.002,0-0.004,0-0.006c0-1.104-0.895-2-2-2
+			c-1.104,0-1.998,0.895-2,2l0,0v16l0,0l0,0c0,1.105,0.896,2,2,2C26.105,44,27,43.105,27,42z"/>
+		<path style="fill:#576D7E;" d="M9.275,17h4.059L12,5c0-1.104-0.895-1.999-2-2l0,0L2.009,3.002C2.006,3.002,2.002,3,1.999,3
+			C0.896,3.002,0,3.896,0,5c0,1.104,0.896,1.998,2,1.998h6.065L9.275,17z"/>
+		<rect x="25.507" y="57" style="fill:#CAD1D8;" width="23" height="4"/>
+		<rect x="20" y="51.004" style="fill:#CAD1D8;" width="4" height="5"/>
+		<circle style="fill:#576D7E;" cx="22" cy="59" r="4"/>
+		<circle style="fill:#576D7E;" cx="52" cy="59" r="4"/>
+		<rect x="20" y="51.004" style="fill:#B0B7BD;" width="4" height="1.996"/>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>
